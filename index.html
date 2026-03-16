@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>คู่มือการเดินทางไป IT Square ชั้น 3</title>
+    <title>IT Square Travel Guide (TH/EN/CN)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -11,102 +11,140 @@
             font-family: 'Kanit', 'Inter', sans-serif;
             background-color: #f8fafc;
         }
-        .step-card {
-            transition: transform 0.2s;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0.75rem;
-        }
+        .step-card { transition: transform 0.2s; }
+        img { border-radius: 0.75rem; width: 100%; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
+        .lang-tag { font-size: 0.7rem; font-weight: bold; padding: 2px 6px; border-radius: 4px; margin-right: 4px; text-transform: uppercase; }
     </style>
 </head>
-<body class="pb-12">
+<body class="pb-12 text-slate-800">
 
     <!-- Header -->
-    <div class="bg-gradient-to-r from-pink-500 to-rose-400 text-white py-8 px-4 text-center shadow-lg">
-        <h1 class="text-2xl md:text-3xl font-bold mb-2">คู่มือการเดินทาง</h1>
-        <p class="text-sm md:text-base opacity-90">IT Square หลักสี่ ชั้น 3 (ก่อนห้างเปิด 10:00 น.)</p>
+    <div class="bg-gradient-to-r from-pink-600 to-rose-400 text-white py-10 px-4 text-center shadow-lg">
+        <h1 class="text-2xl md:text-4xl font-bold mb-2">คู่มือการเดินทาง / 路线指南</h1>
+        <p class="text-sm md:text-lg opacity-90">IT Square Laksi, 3rd Floor (Before 10:00 AM)</p>
+        <p class="text-xs md:text-sm mt-1 opacity-80">IT Square หลักสี่ ชั้น 3 (ก่อนห้างเปิด 10:00 น.)</p>
     </div>
 
     <div class="max-w-2xl mx-auto px-4 mt-8">
         
-        <!-- Info Box -->
-        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-8 text-center">
-            <h2 class="text-slate-800 font-semibold mb-4 text-lg">📍 จุดนัดหมาย</h2>
-            <p class="text-slate-600 mb-6">หน้าสำนักงานจัดหางานกรุงเทพมหานครพื้นที่ 9</p>
-            <a href="https://maps.app.goo.gl/piFpZJiiTeksynYD8" target="_blank" 
-               class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors w-full sm:w-auto">
-               <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-               เปิดแผนที่ Google Maps
-            </a>
+        <!-- Maps Section -->
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-8">
+            <h2 class="text-center font-semibold mb-6 text-lg">📍 Maps / 地图 / แผนที่</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Google Maps (Global/TH) -->
+                <a href="https://maps.app.goo.gl/piFpZJiiTeksynYD8" target="_blank" 
+                   class="flex items-center justify-center px-6 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all">
+                   <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                   Google Maps
+                </a>
+                
+                <!-- Baidu Maps (CN) -->
+                <a href="https://j.map.baidu.com/eb/fVcM" target="_blank" 
+                   class="flex flex-col items-center justify-center px-6 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all">
+                   <div class="flex items-center">
+                       <span class="mr-2 text-xl font-bold">百度地图</span>
+                       <span>Baidu Map</span>
+                   </div>
+                   <div class="text-[10px] mt-1 opacity-90 font-light">
+                       驾车: 我的位置 到 It Square (全程17.0公里,约17分钟)
+                   </div>
+                </a>
+            </div>
         </div>
 
-        <div class="space-y-12">
+        <!-- Steps Section -->
+        <div class="space-y-10">
             <!-- Step 1 -->
-            <div class="step-card bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+            <div class="step-card bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
                 <div class="flex items-center mb-4">
-                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3">1</span>
-                    <h3 class="font-semibold text-slate-800">จุดเริ่มต้นหน้าธนาคารกรุงเทพ</h3>
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">1</span>
+                    <h3 class="font-bold text-lg">Bangkok Bank / 曼谷银行</h3>
                 </div>
-                <p class="text-slate-600 mb-4 ml-11">เมื่อถึงหน้าห้าง ให้มองหาธนาคารกรุงเทพ (Bangkok Bank Express) แล้วเดินตรงไปตามลูกศร</p>
-                <img src="1.jpg" alt="จุดเริ่มต้นหน้าธนาคารกรุงเทพ" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+1.jpg+not+found'" class="w-full shadow-md">
+                <div class="space-y-2 mb-4 text-sm md:text-base border-l-2 border-pink-200 pl-4">
+                    <p><span class="lang-tag bg-slate-100 text-slate-600">TH</span> ถึงหน้าธนาคารกรุงเทพ เดินตามลูกศร ตรงไป</p>
+                    <p><span class="lang-tag bg-blue-50 text-blue-600">EN</span> Arrive at Bangkok Bank Express, then go straight following the arrow.</p>
+                    <p><span class="lang-tag bg-red-50 text-red-600">CN</span> 到达曼谷银行前，按照箭头方向直行。</p>
+                </div>
+                <img src="1.jpg" alt="[รูปภาพขั้นตอนที่ 1]" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+1.jpg+not+found'">
             </div>
 
             <!-- Step 2 -->
-            <div class="step-card bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+            <div class="step-card bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
                 <div class="flex items-center mb-4">
-                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3">2</span>
-                    <h3 class="font-semibold text-slate-800">ลงบันไดเลื่อน</h3>
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">2</span>
+                    <h3 class="font-bold text-lg">Escalator / 自动扶梯</h3>
                 </div>
-                <p class="text-slate-600 mb-4 ml-11">เดินมาจะเจอบันไดเลื่อน ให้ลงไปยังชั้นล่าง</p>
-                <img src="2.jpg" alt="ลงบันไดเลื่อน" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+2.jpg+not+found'" class="w-full shadow-md">
+                <div class="space-y-2 mb-4 text-sm md:text-base border-l-2 border-pink-200 pl-4">
+                    <p><span class="lang-tag bg-slate-100 text-slate-600">TH</span> ลงบันไดเลื่อน</p>
+                    <p><span class="lang-tag bg-blue-50 text-blue-600">EN</span> Go down the escalator.</p>
+                    <p><span class="lang-tag bg-red-50 text-red-600">CN</span> 乘自动扶梯下楼。</p>
+                </div>
+                <img src="2.jpg" alt="[รูปภาพขั้นตอนที่ 2]" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+2.jpg+not+found'">
             </div>
 
             <!-- Step 3 -->
-            <div class="step-card bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+            <div class="step-card bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
                 <div class="flex items-center mb-4">
-                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3">3</span>
-                    <h3 class="font-semibold text-slate-800">เข้าสู่โซนลานจอดรถ</h3>
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">3</span>
+                    <h3 class="font-bold text-lg">Parking Lot / 停车场</h3>
                 </div>
-                <p class="text-slate-600 mb-4 ml-11">เมื่อลงมาแล้ว ให้เดินเลี้ยวขวาออกไปทางลานจอดรถ</p>
-                <img src="3.jpg" alt="เข้าสู่โซนลานจอดรถ" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+3.jpg+not+found'" class="w-full shadow-md">
+                <div class="space-y-2 mb-4 text-sm md:text-base border-l-2 border-pink-200 pl-4">
+                    <p><span class="lang-tag bg-slate-100 text-slate-600">TH</span> ลงบันไดเลื่อนแล้วเลี้ยวขวา</p>
+                    <p><span class="lang-tag bg-blue-50 text-blue-600">EN</span> After the escalator, turn right into the parking area.</p>
+                    <p><span class="lang-tag bg-red-50 text-red-600">CN</span> 下扶梯后向右转进入停车场。</p>
+                </div>
+                <img src="3.jpg" alt="[รูปภาพขั้นตอนที่ 3]" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+3.jpg+not+found'">
             </div>
 
             <!-- Step 4 -->
-            <div class="step-card bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+            <div class="step-card bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
                 <div class="flex items-center mb-4">
-                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3">4</span>
-                    <h3 class="font-semibold text-slate-800">ไปยังทางเข้าลิฟต์ (T2)</h3>
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">4</span>
+                    <h3 class="font-bold text-lg">Lift T2 / 电梯入口</h3>
                 </div>
-                <p class="text-slate-600 mb-4 ml-11">เดินตรงมาจะเจอประตูกระจกป้าย PLAZA ENTRANCE (T2) ให้เดินเข้าไปด้านใน</p>
-                <img src="4.jpg" alt="ไปยังทางเข้าลิฟต์ T2" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+4.jpg+not+found'" class="w-full shadow-md">
+                <div class="space-y-2 mb-4 text-sm md:text-base border-l-2 border-pink-200 pl-4">
+                    <p><span class="lang-tag bg-slate-100 text-slate-600">TH</span> เดินตรงมา เจอทางเข้าลิฟต์ T2</p>
+                    <p><span class="lang-tag bg-blue-50 text-blue-600">EN</span> Walk straight to find the T2 Lift Entrance.</p>
+                    <p><span class="lang-tag bg-red-50 text-red-600">CN</span> 直行到达 T2 电梯入口。</p>
+                </div>
+                <img src="4.jpg" alt="[รูปภาพขั้นตอนที่ 4]" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+4.jpg+not+found'">
             </div>
 
             <!-- Step 5 -->
-            <div class="step-card bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+            <div class="step-card bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
                 <div class="flex items-center mb-4">
-                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3">5</span>
-                    <h3 class="font-semibold text-slate-800">ขึ้นลิฟต์ไปชั้น 3</h3>
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">5</span>
+                    <h3 class="font-bold text-lg">Level 3 (K Counter) / 3 楼</h3>
                 </div>
-                <p class="text-slate-600 mb-4 ml-11">ภายในลิฟต์ กดชั้น 3 (สังเกตป้าย K COUNTER)</p>
-                <img src="5.jpg" alt="ขึ้นลิฟต์ไปชั้น 3" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+5.jpg+not+found'" class="w-full shadow-md">
+                <div class="space-y-2 mb-4 text-sm md:text-base border-l-2 border-pink-200 pl-4">
+                    <p><span class="lang-tag bg-slate-100 text-slate-600">TH</span> กดลิฟต์ขึ้นชั้น 3 ตม. K COUNTER</p>
+                    <p><span class="lang-tag bg-blue-50 text-blue-600">EN</span> Take the lift to 3rd Floor (Immigration K COUNTER).</p>
+                    <p><span class="lang-tag bg-red-50 text-red-600">CN</span> 乘电梯至 3 楼（移民局 K 柜台）。</p>
+                </div>
+                <img src="5.jpg" alt="[รูปภาพขั้นตอนที่ 5]" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+5.jpg+not+found'">
             </div>
 
             <!-- Step 6 -->
-            <div class="step-card bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+            <div class="step-card bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
                 <div class="flex items-center mb-4">
-                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3">6</span>
-                    <h3 class="font-semibold text-slate-800">ถึงจุดนัดหมาย</h3>
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">6</span>
+                    <h3 class="font-bold text-lg">Arrival / 抵达</h3>
                 </div>
-                <p class="text-slate-600 mb-4 ml-11">ออกจากลิฟต์แล้วเลี้ยวขวา เดินตรงไปเรื่อยๆ จะเจอพื้นที่สีชมพู</p>
-                <img src="6.jpg" alt="ถึงจุดนัดหมาย" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+6.jpg+not+found'" class="w-full shadow-md">
+                <div class="space-y-2 mb-4 text-sm md:text-base border-l-2 border-pink-200 pl-4">
+                    <p><span class="lang-tag bg-slate-100 text-slate-600">TH</span> ออกจากลิฟต์ เลี้ยวขวา เดินตรงไปจะเจอจุดนัดหมาย (สีชมพู)</p>
+                    <p><span class="lang-tag bg-blue-50 text-blue-600">EN</span> Exit the lift, turn right, and go straight to the pink area.</p>
+                    <p><span class="lang-tag bg-red-50 text-red-600">CN</span> 出电梯后向右转，直行即可到达目的地（粉色区域）。</p>
+                </div>
+                <img src="6.jpg" alt="[รูปภาพขั้นตอนที่ 6]" onerror="this.src='https://placehold.co/600x400/f1f5f9/64748b?text=Image+6.jpg+not+found'">
             </div>
         </div>
 
-        <!-- Footer Note -->
-        <div class="mt-12 p-4 bg-amber-50 rounded-xl border border-amber-200 text-amber-800 text-sm">
-            <strong>หมายเหตุ:</strong> หากเดินทางมาหลัง 10:00 น. สามารถใช้บันไดเลื่อนหลักภายในห้างขึ้นมายังชั้น 3 ได้ตามปกติครับ
+        <!-- Warning Note -->
+        <div class="mt-12 p-5 bg-amber-50 rounded-2xl border border-amber-200 text-sm">
+            <p class="font-bold text-amber-900 mb-1">📢 Note / 注意 / หมายเหตุ:</p>
+            <p class="text-amber-800">กรณีเดินทางมาหลัง 10:00 น. สามารถใช้ทางเข้าหลักของห้างได้ปกติ</p>
+            <p class="text-amber-800 text-xs mt-1">After 10:00 AM, you can use the main entrance of the mall.</p>
+            <p class="text-amber-800 text-xs mt-1">上午10点以后，您可以正常使用商场正门。</p>
         </div>
     </div>
 
